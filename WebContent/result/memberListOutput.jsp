@@ -13,7 +13,7 @@
 <%  ArrayList<MemberVO> list = (ArrayList<MemberVO>) request.getAttribute("list"); 
     if(!list.isEmpty()) {  %>
 	   <table border="1">
-	   		<tr><th>ID</th><th>비밀번호</th><th>이름</th><th>이메일</th></tr>
+	   		<tr><th>ID</th><th>비밀번호</th><th>이름</th>
 			
 			<%   for(int i=0; i<list.size(); i++){   
 			       MemberVO member = list.get(i);   %>
@@ -21,7 +21,7 @@
 			        <tr><td><%=member.getId() %></td>
 			            <td><%=member.getPwd() %></td>
 			            <td><%=member.getName() %></td>
-			            <
+			            
 			       </tr>
 			       
 			<%   }

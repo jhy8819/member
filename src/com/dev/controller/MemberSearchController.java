@@ -21,11 +21,11 @@ public class MemberSearchController implements Controller {
 		String path = null;
 		
 		if(job.equals("search"))
-			path = "/result/memberSearch.jsp";
+			path = "/memberSearch.jsp";
 		else if(job.equals("update"))
-			path = "/result/memberUpdate.jsp";
+			path = "/memberUpdate.jsp";
 		else if(job.equals("delete"))
-			path = "/result/memberDelete.jsp";
+			path = "/memberDelete.jsp";
 		
 		//service MemberVO
 		MemberService service = MemberService.getInstance();
